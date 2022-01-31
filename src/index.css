@@ -7,7 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.chip {
+  padding: 5px 10px;
+  border: 0.5pt solid #282c34; 
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.chip:not(:last-child){
+  margin-right: 5px;
+}
+
+.chip-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
